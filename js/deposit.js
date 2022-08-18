@@ -1,6 +1,11 @@
 document.getElementById('btn-deposit').addEventListener('click', function(){
     //get input field deposit 
     const newDepositAmount = getInputValueById('deposit-field');
+    if(isNaN(newDepositAmount)){
+        alert('Please Enter a valid Number');
+        return;
+
+    }
     //previous deposit
     const previousDepositAmount = getTextElementById('deposit-total');
     //calculate
