@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <!-- Tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-6 text-red-600">Discount Calculator</h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="w-3/4 bg-green-700 mx-auto p-8 rounded-xl">
+                <h3 class="text-3xl w-3/4 font-medium">Product Price = $<span id="product-price" class="text-yellow-400">1000</span> </h3>
+            <h3 class="text-3xl w-3/4 font-medium mt-2">Discount = $<span id="discount" class="text-indigo-400">30</span>%</h3>
+            <input id="copun-field" type="text" class="block w-3/4 mt-3 px-2 py-2 rounded" placeholder="Enter Copun Code For Get Discount">
+            <button id="update-btn" class="mt-4 py-3 px-4 bg-red-800 text-white">Update Price</button>
+            </div>
+        </section>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
